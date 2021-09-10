@@ -40,6 +40,7 @@ html {
     justify-content: space-around;
     align-items: center;
     padding: 10px ;
+    /* background-color: #333d29; */
     background-color: #6c8fad;
     box-shadow: 0 0 15px 0 rbga(0, 0, 0, 1);
     
@@ -50,7 +51,7 @@ a {
     font-weight: 500;
     font-size: 16px;
     text-decoration: none;
-    color: black;
+    
 }
 
 .nav-bar a:hover {
@@ -72,10 +73,10 @@ h1 {
 }
 
 .profile-pic {
-    width: 15em;
+    width: 20em;
     border-radius: 50%;
     position: absolute;
-    right: 43%;
+    right: 38%;
     top: 7%;
 }
 
@@ -106,10 +107,10 @@ h1 {
 }
 
 .projects-landscape {
-    /* background-color: black; */
+    background-color: #203e56;
     border-radius: 30px;
-    height: 400px;
-    width: 300px;
+    height: 300px;
+    width: 200px;
 }
 
 .contact-me {
@@ -197,7 +198,7 @@ input {
 
 .footer-profile {
     background-color: #6c8fad;
-    color: white;
+    color: black;
     height: 5rem;
     bottom: 0;
     position: absolute;
