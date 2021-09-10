@@ -25,6 +25,7 @@ html {
 
 .header-page {
     position: fixed;
+    z-index: 10;
     background-color: white;
     display: flex;
     width: 100%;
@@ -34,12 +35,14 @@ html {
 
 .nav-bar {
     display: flex;
+    /* position: fixed; */
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 15px ;
-    box-shadow: 0 0 15px 0 rbga(0, 0, 0, 0.5);
+    padding: 10px ;
     background-color: #6c8fad;
+    box-shadow: 0 0 15px 0 rbga(0, 0, 0, 1);
+    
 }
 
 a {
@@ -64,20 +67,32 @@ h1 {
 
 .main {
     height: 800px;
+    text-align: center;
+    
 }
 
 .profile-pic {
-    width: 10em;
+    width: 15em;
     border-radius: 50%;
     position: absolute;
-    right: 50px;
-    top: 80px;
+    right: 43%;
+    top: 7%;
 }
 
 .about {
     height: 800px;
     background-color: #ffffff;
     width: 100%;
+    
+}
+
+.about-items {
+   display: flex;
+   justify-content: space-between;
+}
+
+.about-picture {
+    width: 30rem;
 }
 
 .projects {
@@ -98,12 +113,90 @@ h1 {
 }
 
 .contact-me {
-    height: 800px;
-    background-color: #ffffff;
+    height: 1000px;
+    background-color: #ffffff; 
+     
+    
+}
+
+.contact-header {
+    margin-right: 5px;
+    
+}
+
+.contact-form {
+    width: 65%;
+    padding: 8em 4em 4em 4em;
+    max-width: 54em;
+    margin-left: 35%;
+}
+
+.form-and-info {
+  margin-right: 33%;
+  margin-left: 33%;
+}
+
+.name-and-email {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.25em;
+}
+
+input,
+textarea {
+    background-color: #f7f7f7;
+    border: solid 2px transparent;
+    border-radius: 0.35em;
+    outline: 0;
+    width: 100%;
+    
+}
+
+input:focus,
+textarea:focus {
+    border-color: #49bf9d;
+}
+
+input {
+    height: 2.75em;
+    width: 100%;
+
+
+}
+
+.main ul {
+    margin-top: 0;
+    padding: 1.25em;
+}
+
+.contact-form h3 {
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+.submit-button {
+    cursor: pointer;
+    background-color: white;
+    color: #787878;
+    border-radius: 0.35em;
+    border: solid #787878;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+        border-color 0.2s ease-in-out;
+    box-shadow: none;
+    height: 3.15em;
+    min-width: 10em;
+    font-size: 16pt;
+    width: 100%;
+}
+
+.submit-button:hover {
+    border: solid #49bf9d;
+    color: #4499bb;
+
 }
 
 .footer-profile {
-    background-color: black;
+    background-color: #6c8fad;
     color: white;
     height: 5rem;
     bottom: 0;
@@ -123,6 +216,32 @@ a:hover {
     color: #5cd98f;
 }
 
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~ MOBILE FRIENDLY SYTLING ~~~~~~~~~~~~~~~~~~~~~~~ */
+
+@media  screen and  (max-width: 980px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main {
+        background-position: top left, center center;
+        background-size: auto, cover;
+        left: auto;
+        top: auto;
+        position: relative;
+        width: 100%;
+        text-align: center;
+        padding: 6em 4em;
+    }
+
+    .profile-pic {
+        top: 300px;
+        right: 350px;
+    }
+    
+}
 
 
 
