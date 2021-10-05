@@ -35,15 +35,13 @@ html {
 
 .nav-bar {
     display: flex;
-    /* position: fixed; */
+    position: fixed;
     width: 100%;
     justify-content: space-around;
     align-items: center;
     padding: 10px ;
-    /* background-color: #333d29; */
     background-color: #6c8fad;
     box-shadow: 0 0 15px 0 rbga(0, 0, 0, 1);
-    
 }
 
 a {
@@ -51,11 +49,14 @@ a {
     font-weight: 500;
     font-size: 16px;
     text-decoration: none;
-    
+
 }
 
 .nav-bar a:hover {
     color: #f6f8f8;
+}
+.nav-link {
+    color: black;
 }
 
 h1 {
@@ -67,6 +68,7 @@ h1 {
 }
 
 .main {
+    padding-top: 10px;
     height: 800px;
     text-align: center;
     
@@ -81,6 +83,7 @@ h1 {
 }
 
 .about {
+    padding-top: 20px;
     height: 800px;
     background-color: #ffffff;
     width: 100%;
@@ -96,8 +99,12 @@ h1 {
     width: 30rem;
 }
 
+.projects-section {
+    padding-top: 20px;
+}
+
 .projects {
-    height: 800px;
+    height: 700px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -110,10 +117,11 @@ h1 {
     background-color: #203e56;
     border-radius: 30px;
     height: 300px;
-    width: 200px;
+    width: 250px;
 }
 
 .contact-me {
+    padding-top: 20px;
     height: 1000px;
     background-color: #ffffff; 
      
