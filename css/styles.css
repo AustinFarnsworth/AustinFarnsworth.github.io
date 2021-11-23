@@ -15,7 +15,7 @@ body {
   line-height: 1.6;
   position: relative;
   min-height: 100%;
-  min-width: 100%;
+  min-width: 90%;
   background-color: #f6f8f8;
   margin-top: auto;
 }
@@ -93,7 +93,7 @@ h1 {
 .profile-pic {
   width: 20em;
   border-radius: 50%;
-  position: absolute;
+  /* position: absolute; */
   right: 38%;
   top: 7%;
 }
@@ -288,25 +288,41 @@ input {
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~ MOBILE FRIENDLY SYTLING ~~~~~~~~~~~~~~~~~~~~~~~ */
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 900px) {
   .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+  body {
+    width: fit-content;
+  }
+
+  .animation-header {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+
+  .animation-text {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+
+  .profile-pic {
+    padding: 5px;
+    width: 70%;
+  }
+
+  .about {
+    width: 100%;
+  }
+
+  .about-items {
     display: flex;
     flex-direction: column;
   }
 
-  .main {
-    background-position: top left, center center;
-    background-size: auto, cover;
-    left: auto;
-    top: auto;
-    position: relative;
-    width: 100%;
-    text-align: center;
-    padding: 6em 4em;
-  }
-
-  .profile-pic {
-    top: 300px;
-    right: 350px;
+  .about-picture {
+    width: 90%;
   }
 }
