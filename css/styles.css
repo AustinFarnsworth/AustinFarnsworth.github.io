@@ -152,12 +152,13 @@ h1 {
   font-family: "Raleway", sans-serif;
   box-shadow: 0px 15px 50px #d9dbdf;
 }
+
 .card-info {
   padding: 5px 15px;
 }
 
 .card-info a:hover {
-  color: red;
+  color: #6c8fad;
 }
 
 .project-image {
@@ -259,7 +260,7 @@ input {
     border-color 0.2s ease-in-out;
   box-shadow: none;
   height: 3.15em;
-  min-width: 10em;
+  width: 10em;
   font-size: 16pt;
   width: 100%;
 }
@@ -324,5 +325,32 @@ input {
 
   .about-picture {
     width: 90%;
+    margin-top: 15px;
+  }
+
+  .contact-me {
+    width: 100%;
+  }
+
+  .form-and-info {
+    margin-right: 20%;
+    margin-left: 15%;
+  }
+
+  .name-and-email {
+    display: block;
+    margin-bottom: 7px;
+  }
+
+  .submit-button {
+    margin: 10px 0;
+  }
+
+  .form-links {
+    list-style: none;
+  }
+
+  .name-and-email input:last-child {
+    margin-top: 5px;
   }
 }
