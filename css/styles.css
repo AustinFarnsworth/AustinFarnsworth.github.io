@@ -93,9 +93,11 @@ h1 {
 .profile-pic {
   width: 20em;
   border-radius: 50%;
+  margin-top: 20px;
+
   /* position: absolute; */
-  right: 38%;
-  top: 7%;
+  /* right: 38%;
+  top: 10%; */
 }
 
 .about {
@@ -189,8 +191,8 @@ h1 {
 }
 
 .contact-me {
-  padding: 50px 30px;
-  padding-bottom: 130px;
+  padding: 10px 20px;
+  padding-bottom: 110px;
   background-color: #ffffff;
 }
 
