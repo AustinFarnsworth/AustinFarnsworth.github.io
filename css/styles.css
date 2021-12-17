@@ -364,4 +364,8 @@ input {
   .name-and-email input:last-child {
     margin-top: 5px;
   }
+
+  .footer-profile {
+    width: 100%;
+  }
 }
