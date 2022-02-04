@@ -238,7 +238,8 @@ textarea {
 
 input:focus,
 textarea:focus {
-  border-color: #49bf9d;
+  /* border-color: #b5c7d6; */
+  border-color: #c4d2de;
 }
 
 input {
@@ -259,6 +260,11 @@ input {
 .address {
   margin: 10px 0;
   margin-bottom: 15px;
+}
+
+.twitter:hover {
+  color: #49bf9d;
+  /* color: #56728a; */
 }
 
 .submit-button {
